@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Scoop's autoupdate test binary.",
     "homepage": "https://github.com/pinebright/autoupdate-test",
     "license": "",
-    "url": "https://github.com/pinebright/autoupdate-test/releases/download/v1.0.0/sample.exe",
-    "hash": "",
+    "url": "https://github.com/pinebright/autoupdate-test/releases/download/v1.0.1/sample.exe",
+    "hash": "de6d0753ccdb062c90331b7de1f720cd97a52fbc02cb8f0611b9650d78c69345",
     "bin": "sample.exe",
     "checkver": "github",
     "autoupdate": {
