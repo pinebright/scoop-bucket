@@ -1,0 +1,30 @@
+{
+    "version": "0.4.4",
+    "description": "The keyboard macro tool for simply switches IME just the Alt key.",
+    "homepage": "https://github.com/karakaram/alt-ime-ahk",
+    "license": "",
+    "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.4/alt-ime-ahk.zip",
+    "hash": "",
+    "post_install": [
+        "## Background start",
+        "Invoke-Expression -command \"& $dir\\alt-ime-ahk.exe\"",
+        "## Add startup",
+        "$startup = $(Get-ItemProperty \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\").Startup",
+        "$WsShell = New-Object -ComObject WScript.Shell",
+        "$Shortcut = $WsShell.CreateShortcut(\"$startup\\alt-ime-ahk.lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\alt-ime-ahk.exe\"",
+        "$Shortcut.IconLocation = \"$dir\\alt-ime-ahk.exe\"",
+        "$Shortcut.Save()"
+    ],
+    "uninstaller": {
+        "script": [
+            "$startup = $(Get-ItemProperty \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\").Startup",
+            "Remove-Item \"$startup\\alt-ime-ahk.lnk\" -Force -Recurse"
+        ]
+    },
+    "bin": "alt-ime-ahk.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v$version/alt-ime-ahk.zip"
+    }
+}
