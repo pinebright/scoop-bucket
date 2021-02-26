@@ -4,7 +4,7 @@
     "homepage": "https://github.com/karakaram/alt-ime-ahk",
     "license": "",
     "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.4/alt-ime-ahk.zip",
-    "hash": "",
+    "hash": "e48b5762aba641e929519dc00a2cfb978923650e9829973c56984a789429cdf8",
     "post_install": [
         "## Background start",
         "Invoke-Expression -command \"& $dir\\alt-ime-ahk.exe\"",
