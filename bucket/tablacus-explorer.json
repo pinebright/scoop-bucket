@@ -10,25 +10,24 @@
     "hash": "040a4728cd8cd64e5e4fa65da05698a70ebc86caaef7d6b535aa0bac5e26723e",
     "architecture": {
         "64bit": {
-            "pre_install": [
-                "Rename-Item \"$dir\\TE64.exe\" \"$dir\\TE.exe\"",
-                "Remove-Item \"$dir\\TE32.exe\" -Force"
+            "bin": [["TE64.exe", "te"], ["TE64.exe", "tablacus"]],
+            "shortcuts": [
+                [
+                    "TE64.exe",
+                    "Tablacus Explorer"
+                ]
             ]
         },
-        "32bit": {
-            "pre_install": [
-                "Rename-Item \"$dir\\TE32.exe\" \"$dir\\TE.exe\"",
-                "Remove-Item \"$dir\\TE64.exe\" -Force"
+         "32bit": {
+            "bin": [["TE32.exe", "te"], ["TE32.exe", "tablacus"]],
+            "shortcuts": [
+                [
+                    "TE32.exe",
+                    "Tablacus Explorer"
+                ]
             ]
         }
     },
-    "bin": "TE.exe",
-    "shortcuts": [
-        [
-            "TE.exe",
-            "Tablacus Explorer"
-        ]
-    ],
     "persist": [
         "config",
         "addons",
