@@ -2,7 +2,7 @@
     "version": "1.41.09",
     "description": "Cancel disabled NumLock key.",
     "homepage": "https://www.inasoft.org/icountt.html#numlocklock",
-    "license": "",
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.inasoft.org/archives/nmlk1.41.09_x64.zip",
@@ -33,7 +33,7 @@
     "bin": "NumLockLock.exe",
     "checkver": {
         "url": "https://www.inasoft.org/icountt.html#numlocklock",
-        "regex": "NumLockLock ver.([\\d.]+)"
+        "regex": "<B>NumLockLock</B> ver.([\\d.]+)"
     },
     "autoupdate": {
         "64bit": {
