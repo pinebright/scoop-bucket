@@ -1,13 +1,13 @@
 {
-    "version": "21.5.9",
+    "version": "21.5.11",
     "description": "A tabbed file manager with Add-on support.",
     "homepage": "https://tablacus.github.io/explorer_en.html",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/tablacus/TablacusExplorer/blob/master/LICENSE"
     },
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/21.5.9/te210509.zip",
-    "hash": "e53718cadb72feb71e71fbf24cd818a1a553a9bda700ddcffafe98b8d18f9e82",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/21.5.11/te210511.zip",
+    "hash": "db888fe04ae74ea5c35c98747e0ec5fcfb370225ab0493ad0930f900cc03caeb",
     "architecture": {
         "64bit": {
             "bin": [
