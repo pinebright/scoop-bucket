@@ -16,4 +16,3 @@ scoop bucket add pinebright https://github.com/pinebright/scoop-bucket.git
 scoop update
 scoop install [app]
 ```
-
