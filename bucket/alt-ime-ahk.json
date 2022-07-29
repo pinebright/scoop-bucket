@@ -1,10 +1,10 @@
 {
-    "version": "0.4.6",
+    "version": "0.4.5",
     "description": "The keyboard macro tool for simply switches IME just the Alt key.",
     "homepage": "https://github.com/karakaram/alt-ime-ahk",
     "license": "",
-    "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.6/alt-ime-ahk.zip",
-    "hash": "3838551e8b9fb65504e8e9af3d9b38b147e9b5af2a651f65b92ba727a95634b2",
+    "url": "https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.5/alt-ime-ahk.zip",
+    "hash": "4bf30b301c090ec0f5cc198f2a118c4bc56944ce951c8d9117687dc59531b8f6",
     "post_install": [
         "## Background start",
         "Invoke-Expression -command \"& $dir\\alt-ime-ahk.exe\"",
