@@ -1,12 +1,12 @@
 {
-    "version": "0.45",
+    "version": "26.02.01",
     "description": "De-slop Windows.",
     "homepage": "https://github.com/builtbybel/Winslop",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/builtbybel/Winslop/releases/download/0.45/Winslop-0.45.zip",
-            "hash": "caf78539e2ccb066a4dbee510d32fdb4cad17efdc23da60e93c64a3f86747db6"
+            "url": "https://github.com/builtbybel/Winslop/releases/download/26.02.01/Winslop-26.02.01.zip",
+            "hash": "18909c9db9dc759245237990b4f6b81205a65011900e56070232a390d2f9af9c"
         }
     },
     "bin": "Winslop.exe",
