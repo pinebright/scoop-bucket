@@ -1,5 +1,5 @@
 {
-    "version": "2026-06-30-3459798b606d",
+    "version": "0.7.1-preview.2026-06-30-3459798b606d",
     "description": "Agent multiplexer that lives in your terminal.",
     "homepage": "https://herdr.dev",
     "license": "AGPL-3.0-or-later|Commercial",
@@ -16,12 +16,13 @@
     "bin": "herdr.exe",
     "checkver": {
         "url": "https://herdr.dev/preview.json",
-        "jsonpath": "$.build_id"
+        "regex": "\"base_version\"\\s*:\\s*\"(?<base>[^\"]+)\"[\\s\\S]*?\"build_id\"\\s*:\\s*\"(?<build>\\d{4}-\\d{2}-\\d{2}-[a-f0-9]+)\"",
+        "replace": "${base}-preview.${build}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ogulcancelik/herdr/releases/download/preview-$version/herdr-windows-x86_64.exe#/herdr.exe",
+                "url": "https://github.com/ogulcancelik/herdr/releases/download/preview-$matchBuild/herdr-windows-x86_64.exe#/herdr.exe",
                 "hash": {
                     "url": "https://herdr.dev/preview.json",
                     "jsonpath": "$.assets['windows-x86_64'].sha256"
